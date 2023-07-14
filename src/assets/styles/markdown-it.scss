@@ -1,0 +1,76 @@
+@import url("https://fonts.font.im/css?family=Roboto");
+
+.markdown-container {
+  * {
+    font-family: "Roboto";
+  }
+}
+
+#markdown-it-table {
+  table {
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+}
+
+#markdown-it-code {
+  /* 行号样式 */
+  .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 18px;
+    font-size: 100%;
+    left: 0.5em;
+    width: 2.1em;
+    letter-spacing: -1px;
+    border-right: 1px solid #0e0f12;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #282c34;
+  }
+
+  pre {
+    position: relative;
+    padding-left: 2.6em;
+    line-height: 1.3em;
+  }
+
+  .line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+  }
+
+  pre {
+    background-color: #282c34;
+    border-radius: 8px;
+  }
+
+  pre code {
+    border-radius: 8px;
+  }
+
+  .line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #999;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+  }
+
+  .language-name {
+    position: absolute;
+    top: 9px;
+    color: #999999;
+    right: 43px;
+    font-size: 0.8em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+}

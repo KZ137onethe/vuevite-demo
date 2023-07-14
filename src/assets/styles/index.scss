@@ -1,0 +1,17 @@
+@import "~/node_modules/element-plus/theme-chalk/el-message-box.css";
+@import "~/node_modules/element-plus/theme-chalk/el-message.css";
+
+@import "./markdown-it.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.app-container {
+  margin: 30px;
+}
+
+a {
+  text-decoration: none;
+}
