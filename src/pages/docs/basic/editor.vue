@@ -5,6 +5,7 @@
     title="编辑文档"
     fullscreen
     modal="false"
+    center
     align-center
     destroy-on-close
   >

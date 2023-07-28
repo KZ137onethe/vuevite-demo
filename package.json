@@ -20,6 +20,7 @@
     "markdown-it": "^13.0.1",
     "markdown-it-multimd-table": "^4.2.2",
     "mavon-editor": "3.0.0-beta",
+    "monaco-editor": "^0.40.0",
     "vue": "^3.2.45",
     "vue-router": "^4.2.2"
   },
@@ -30,6 +31,7 @@
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.1.0",
+    "vite-plugin-svg-icons": "^2.0.1",
     "vitest": "^0.29.2"
   }
 }
