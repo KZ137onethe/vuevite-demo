@@ -1,13 +1,22 @@
 {
   "name": "vitest-demo",
-  "private": true,
-  "version": "0.0.0",
+  "description": "a vuejs test demo",
+  "repository": {
+    "type": "git",
+    "url": "git@test"
+  },
+  "author": "KZonethe137 <q2274799107@126.com>",
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint:prettier": "npx prettier --write . \"src/**/*\""
+    "lint:prettier": "npx prettier --write . \"src/**/*\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
@@ -25,8 +34,15 @@
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "@vitejs/plugin-vue": "^4.0.0",
-    "prettier": "^3.0.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.1",
     "sass": "^1.63.6",
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
