@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git@test"
   },
-  "author": "KZonethe137 <q2274799107@126.com>",
+  "author": "KZ137onethe <q2274799107@126.com>",
   "license": "GPL-3.0-or-later",
   "private": false,
   "version": "0.0.1",
@@ -14,9 +14,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint:prettier": "npx prettier --write . \"src/**/*\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pretty:format": "npx prettier --write . \"src/**/*\"",
+    "lint": "pnpm lint-staged",
+    "pretty": "pnpm pretty-quick --staged"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
@@ -40,10 +41,12 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.46.0",
     "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.33.1",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "prettier": "^3.0.1",
+    "pretty-quick": "^3.1.3",
     "sass": "^1.63.6",
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
@@ -55,5 +58,15 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.vue": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
